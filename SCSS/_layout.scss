@@ -1,0 +1,186 @@
+.wrap {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 30px 42px 0 42px;
+    @include mobile {
+        @include mobile-fullwidth
+    }
+}
+
+.header {
+    @include space-between;
+    position: relative;
+    margin-bottom: 30px;
+    input,
+    label {
+        display: none;
+    }
+    @include mobile {
+        margin: 1.5em;
+        label {
+            display: block;
+            position: absolute;
+        }
+        #menuControl:checked~.menu {
+            display: block;
+            min-height: 500px;
+        }
+    }
+}
+
+.nav {
+    width: 319px;
+    @include space-between;
+    color: $primary-color;
+    @include mobile {
+        justify-content: flex-end;
+    }
+}
+
+.menu {
+    width: 215px;
+    @include space-between;
+    @include mobile {
+        @include absolute(2em, auto, 0, auto);
+        flex-direction: column;
+        max-height: 0px;
+        max-width: 50%;
+        overflow: hidden;
+        z-index: 1;
+        transition: 1s;
+        li {
+            background-color: $background-color;
+            border-bottom: $word-color 1px solid;
+            padding: 1rem;
+        }
+    }
+}
+
+.logo a {
+    background-image: url(img/logo-all-dark.svg);
+    width: 220px;
+    height: 40px;
+    display: block;
+    background-repeat: no-repeat;
+    text-indent: -100rem;
+    @include mobile {
+        background-image: url(img/logotype-lg-dark.svg);
+        width: 114.14px;
+        height: 17.74px;
+        @include absolute-center;
+    }
+}
+
+.footerTop {
+    background-color: $primary-color;
+}
+
+.email {
+    max-width: 990px;
+    margin: 0 auto;
+    height: 116px;
+    @include space-between;
+    @include mobile {
+        height: 186px;
+        padding: 0 30px;
+        @include column-evenly;
+    }
+}
+
+.subscribe {
+    @include center;
+    img {
+        max-width: 40px;
+        height: 40px;
+        padding-right: 20px;
+    }
+    p {
+        font-size: 24px;
+        color: $background-color;
+    }
+}
+
+.send {
+    width: 380px;
+    @include mobile {
+        width: 100%;
+    }
+    background-color: $background-color;
+    @include space-between;
+    button {
+        height: 56px;
+        width: 64px;
+        background-color: $secondary-color;
+        cursor: pointer;
+    }
+    i {
+        color: $primary-color;
+        padding: 50%;
+        display: inline-block;
+    }
+    form {
+        @include space-between;
+        flex-grow: 2;
+    }
+    input {
+        margin-left: 5%;
+        width: 100%;
+    }
+}
+
+.footerDown {
+    background-color: $background-color;
+}
+
+.info {
+    max-width: 990px;
+    margin: 0 auto;
+    height: 341px;
+    @include mobile {
+        height: auto;
+    }
+    padding: 30px 0;
+    @include space-between;
+    color: $primary-color;
+    box-sizing: border-box;
+    @include mobile {
+        padding: 39px 50px 30px 30px;
+        flex-wrap: wrap;
+    }
+}
+
+.about {
+    @include column-between;
+    height: 100%;
+    .logo-name {
+        height: 27px;
+    }
+    p {
+        line-height: 25px;
+        @include mobile {
+            margin-top: 2rem;
+        }
+    }
+    .line,
+    .fb {
+        width: 32px;
+        height: 32px;
+        padding-top: 40px;
+    }
+}
+
+.copyright {
+    @include column-between;
+    height: 100%;
+    align-items: flex-end;
+    @include mobile {
+        height: 0;
+        padding: 1rem 0 0.5rem 0;
+    }
+    img {
+        width: 59px;
+        @include mobile {
+            display: none;
+        }
+    }
+}

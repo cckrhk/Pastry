@@ -1,0 +1,1466 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+button,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+}
+
+
+/* Layout 共同佈局*/
+
+.wrap {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 30px 42px 0 42px;
+}
+
+.wrap img {
+    display: block;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.header label,
+.header input {
+    display: none;
+}
+
+.logo a {
+    display: block;
+    background-image: url(img/logo-all-dark.svg);
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 40px;
+}
+
+.nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #3F5D45;
+    font-weight: bold;
+}
+
+.menu li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    color: #3F5D45;
+}
+
+.footerTop {
+    background-color: #3F5D45;
+}
+
+.email {
+    max-width: 990px;
+    margin: 0 auto;
+    height: 116px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe img {
+    max-width: 40px;
+    height: 40px;
+    padding-right: 20px;
+}
+
+.subscribe p {
+    font-size: 24px;
+    color: #EAF0ED;
+}
+
+.send {
+    width: 380px;
+    background-color: #EAF0ED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 2;
+}
+
+.send button {
+    height: 56px;
+    width: 64px;
+    background-color: #FFE180;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mail-icon i {
+    color: #3F5D45;
+    padding: 50%;
+    display: inline-block;
+}
+
+.send input {
+    margin-left: 5%;
+    width: 100%;
+}
+
+.footerDown {
+    background-color: #EAF0ED;
+}
+
+.info {
+    max-width: 990px;
+    margin: 0 auto;
+    height: 341px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #3F5D45;
+    box-sizing: border-box;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about p {
+    line-height: 25px;
+}
+
+.logo-name {
+    height: 27px;
+}
+
+.line,
+.fb {
+    width: 32px;
+    height: 32px;
+    padding-top: 40px;
+}
+
+.good-day {
+    width: 59px;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+/* 商品頁面 Product CSS */
+
+.p-pic {
+    position: relative;
+}
+
+.imgText {
+    height: 75%;
+    position: absolute;
+    right: 8%;
+    margin-top: 8%;
+    z-index: 1;
+}
+
+.mainBanner {
+    width: 100%;
+}
+
+.p-content {
+    max-width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog {
+    width: 32%;
+    text-align: center;
+    font-size: 24px;
+    margin-right: 1.5rem;
+}
+
+.catalog li a {
+    display: block;
+    color: #3F5D45;
+    text-decoration: none;
+    padding: 6%;
+    border: 1px solid #EAF0ED;
+}
+
+.catalog a:hover {
+    background-color: #EAF0ED;
+}
+
+.classification {
+    padding: 8%;
+    color: #EAF0ED;
+    background-color: #3F5D45;
+}
+
+.p-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.p-item {
+    width: 48.38%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.p-item a {
+    color: #3F5D45;
+    font-size: 24px;
+    background-color: #EAF0ED;
+    padding: 16px 0;
+    font-weight: 450;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.item_pic p {
+    writing-mode: vertical-lr;
+    position: absolute;
+    padding: 10px;
+    color: #EAF0ED;
+    background-color: #3F5D45;
+    font-weight: normal;
+    left: 10%;
+    font-size: 16px;
+}
+
+.heart {
+    position: absolute;
+    top: 6%;
+    right: 10%;
+}
+
+.heart a:hover {
+    background-color: #3F5D45;
+    color: #3F5D45;
+}
+
+.prod_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prod_info li {
+    font-size: 20px;
+    color: #3F5D45;
+    border: 1px solid #EAF0ED;
+    padding: 5% 1.2%;
+    display: flex;
+    justify-content: center;
+}
+
+.p-name {
+    width: 60%;
+}
+
+.p-price {
+    width: 40%;
+    font-weight: 450;
+}
+
+.page {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.page ul {
+    display: flex;
+    margin-bottom: 10%;
+    width: 48%;
+}
+
+.page li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    color: #3F5D45;
+}
+
+.page li a {
+    text-decoration: none;
+    border: 1px solid #EAF0ED;
+    display: block;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page a:hover {
+    background-color: #3F5D45;
+    color: #EAF0ED;
+}
+
+
+/* 付款成功頁面checkout-success CSS*/
+
+.CScontent {
+    background-image: url(img/brooke-lark-385507-unsplash.jpg);
+    height: 460px;
+    margin-bottom: 8%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.check {
+    width: 10em;
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8em;
+    color: #3F5D45;
+    position: relative;
+}
+
+.check li:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 58px;
+    height: 1px;
+    background-color: #3F5D45;
+}
+
+.check li:last-child::after {
+    content: none;
+}
+
+.banner-text {
+    width: 10em;
+    background-color: transparent;
+    margin-top: 3em;
+}
+
+.CScontent a {
+    background-color: #FFE180;
+    width: 15em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #3F5D45;
+}
+
+
+/* 登入頁面log-in CSS*/
+
+.LIcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5em 0;
+}
+
+.member {
+    width: 35%;
+    background-color: #3F5D45ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialAccount {
+    width: 35%;
+    height: 80%;
+    background-color: #EAF0ED;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.LIcontent h2 {
+    color: #EAF0ED;
+    font-size: 36px;
+    margin: 1em 0;
+}
+
+.member form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 2em;
+    color: #EAF0ED;
+}
+
+.loginText {
+    display: flex;
+    align-items: center;
+    height: 3em;
+    margin-bottom: 6%;
+    background-color: #EAF0ED;
+}
+
+.loginText span {
+    color: #3F5D45;
+    width: 10%;
+    padding-left: 1em;
+    line-height: 45px;
+}
+
+.loginText input {
+    width: 90%;
+    height: 100%;
+    margin: 1em 0;
+}
+
+::placeholder {
+    color: #8DA291;
+}
+
+.rememberMe {
+    display: flex;
+}
+
+.member button {
+    color: #3F5D45;
+    background-color: #FFE180;
+    width: 100%;
+    padding: 1em;
+    font-size: 24px;
+}
+
+.socialAccount h3 {
+    color: #8DA291;
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    position: relative;
+    background-color: #EAF0ED;
+}
+
+.socialAccount h3:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 1.5em;
+    height: 1px;
+    right: -30%;
+    background-color: #8DA291;
+}
+
+.socialAccount h3:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 1.5em;
+    height: 1px;
+    left: -30%;
+    background-color: #8DA291;
+}
+
+.socialAccount ul {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0;
+}
+
+.socialAccount a {
+    background-color: #fff;
+    width: 85%;
+    height: 56px;
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialAccount li {
+    display: flex;
+    justify-content: center;
+}
+
+.socialAccount img {
+    width: 33%;
+}
+
+
+/* 購物車頁面 shopping cart CSS*/
+
+.SCcontent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.shoppingcart {
+    width: 62%;
+    color: #3F5D45;
+    margin-bottom: 2em;
+}
+
+.summary {
+    width: 35%;
+}
+
+.SCcontent h1,
+.summary h2 {
+    height: 65px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SCcontent h1 {
+    background-color: #EAF0ED;
+    font-weight: bold;
+}
+
+.shoppingcart li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 0;
+}
+
+.cartItem img {
+    width: 20%;
+}
+
+.cartItem li {
+    border-top: 1px solid#EAF0ED;
+}
+
+.cartItem p {
+    line-height: 1.5em;
+    padding-right: 2.5em;
+}
+
+.cartItemname {
+    display: flex;
+}
+
+.quantity {
+    display: flex;
+    border: 1px solid #EAF0ED;
+    position: relative;
+}
+
+.quantity li {
+    padding: 0.8em;
+    background-color: #fff;
+    margin-top: 0px;
+    border-top: 0px;
+}
+
+.quantity li button {
+    background-color: transparent;
+}
+
+.quantity li:after {
+    content: "";
+    position: absolute;
+    border-left: 1px solid;
+    top: 0px;
+    bottom: 0px;
+    left: 35px;
+    color: #EAF0ED;
+}
+
+.quantity li:before {
+    content: "";
+    position: absolute;
+    border-left: 1px solid;
+    top: 0px;
+    bottom: 0px;
+    right: 35px;
+    color: #EAF0ED;
+}
+
+.cartItem span {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.summary h2 {
+    border-bottom: 1px solid;
+    margin: 0.8em;
+}
+
+.summary {
+    background-color: #3F5D45;
+    color: #EAF0ED;
+}
+
+.summary ul {
+    padding: 1em;
+}
+
+.summary li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    font-weight: lighter;
+}
+
+.summary .totalCost {
+    font-size: 20px;
+    margin-top: 1em;
+    font-weight: normal;
+}
+
+.summary button {
+    background-color: #FFE180;
+    color: #3F5D45;
+    font-size: 24px;
+    font-weight: bolder;
+    width: 100%;
+    height: 65px;
+}
+
+
+/* 運送頁面 Delivery CSS*/
+
+.CheckoutContent {
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.CheckoutInfo {
+    width: 59%;
+    background-color: #3F5D45;
+    color: #EAF0ED;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.CheckoutMain {
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+}
+
+.CheckouTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.CheckoutInfo h1 {
+    font-size: 36px;
+    margin: 10% 0;
+    display: inline-block;
+}
+
+.CheckoutInfo ul {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 45%;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.CheckoutInfo li:before {
+    content: "";
+    width: 16.5px;
+    height: 16.5px;
+    display: block;
+    border: 1px solid;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    bottom: 42%;
+    background-color: #3F5D45;
+}
+
+.CheckoutInfo li:after {
+    content: "";
+    width: 98%;
+    height: 1px;
+    position: absolute;
+    background-color: #8DA291;
+    top: 50%;
+    left: 2%;
+    z-index: 0;
+}
+
+.CheckoutInfo .delivery li:first-child:before {
+    content: "●";
+}
+
+.CheckoutInfo .payment li:first-child:before,
+.CheckoutInfo .e-invoice li:first-child:before,
+.CheckoutInfo .e-invoice li:first-child+li:before {
+    content: "✓";
+    font-weight: bolder;
+    font-size: 15px;
+    color: #3F5D45;
+    background-color: #EAF0ED;
+}
+
+.CheckoutInfo .payment li:first-child+li:before,
+.CheckoutInfo .e-invoice li:last-child:before {
+    content: "●";
+}
+
+.CheckoutInfo input,
+.CheckoutInfo select {
+    height: 4rem;
+    background-color: #EAF0ED;
+    color: #8DA291;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0px;
+}
+
+.CheckoutInfo form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.CheckoutInfo p {
+    font-size: 20px;
+}
+
+.w-48 {
+    width: 48%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.phone {
+    margin-bottom: 1rem;
+}
+
+.address,
+.cardholder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.CheckoutInfo button {
+    color: #3F5D45;
+    background-color: #FFE180;
+    font-size: 24px;
+    width: 100%;
+    padding: 5%;
+    font-weight: bold;
+}
+
+.order {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin-left: 3%;
+}
+
+.po h2,
+.shoppinglist h2 {
+    color: #8DA291;
+    height: 65px;
+    background-color: #EAF0ED;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.po {
+    color: #8DA291;
+    border: 1px solid #EAF0ED;
+}
+
+.po li {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.po .totalCost {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.shoppinglist {
+    border: 1px solid #EAF0ED;
+    margin-top: 5%;
+}
+
+.shoppinglist li {
+    display: flex;
+    color: #8DA291;
+    margin: 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shoppinglist img {
+    width: 45%;
+}
+
+.shoppinglist p {
+    padding: 5% 0;
+}
+
+.shoppinglistPrice {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+/* invoice CSS */
+
+.invoiceChoice {
+    display: flex;
+    flex-direction: row;
+}
+
+.invoiceKind {
+    border: 1px solid;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.invoiceKind p {
+    padding: 14px 0;
+}
+
+.invoiceKind :hover {
+    color: #3F5D45;
+    background-color: #EAF0ED;
+}
+
+
+/* Home 首頁 CSS */
+
+.homeBanner {
+    width: 100%;
+    position: relative;
+    height: 743px;
+}
+
+.homeMainbanner {
+    background-image: url(https://bit.ly/2OhbMHr);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 496px;
+}
+
+.homeBanner ul {
+    display: flex;
+    width: 90%;
+    margin: -10% 0 5% 5%;
+    position: absolute;
+}
+
+.selected {
+    background-image: url('https://bit.ly/2R5tqwD');
+}
+
+.recommended {
+    background-image: url('https://bit.ly/2Dwoxd7');
+}
+
+.newProduct {
+    background-image: url('https://bit.ly/2OUteif');
+}
+
+.greenCover {
+    backdrop-filter: blur(4px);
+    width: 100%;
+    height: 256px;
+    background-color: rgb(63, 93, 69, 80%);
+}
+
+.homeBanner li {
+    width: 100%;
+    height: 256px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.homeBanner h2 {
+    width: 100%;
+    height: 100%;
+    writing-mode: vertical-rl;
+    font-size: 24px;
+    font-weight: lighter;
+    letter-spacing: 0.5rem;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    line-height: 282px;
+    top: 0;
+}
+
+.homeBanner h2:hover {
+    background-color: #FFE180;
+    font-weight: normal;
+    color: #3F5D45;
+}
+
+.Whychoose,
+.Whymust {
+    background-color: #EAF0ED;
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.WhychooseWord,
+.WhymustWord {
+    width: 30%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 4rem 0;
+}
+
+.Whychoose p,
+.Whymust p {
+    color: #8DA291;
+    writing-mode: vertical-rl;
+    font-weight: lighter;
+    line-height: 2rem;
+}
+
+.WhychooseBanner {
+    background-image: url(https://bit.ly/2xPn7Eq);
+    width: 460px;
+    height: 460px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 2rem;
+    margin-top: -1.5rem;
+}
+
+.WhychooseText {
+    background-image: url(img/lg-為什麼選擇了做甜點.svg);
+    width: 89px;
+    height: 307px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 2rem;
+    margin-top: -1.5rem;
+}
+
+.WhymustText {
+    background-image: url(img/lg-為什麼一定要吃甜點.svg);
+    width: 89px;
+    height: 307px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 2rem;
+    margin-top: -1.5rem;
+}
+
+.WhymustBanner {
+    background-image: url(https://bit.ly/2zzAQS4);
+    width: 460px;
+    height: 460px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 2rem;
+    margin-top: -1.5rem;
+}
+
+.NoreasonBanner {
+    background-image: url(img/lg-想吃甜點是不需要理由的.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 89px;
+    height: 328px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.Home.p-list {
+    padding: 0 42px;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+}
+
+.Home .p-item {
+    width: 32%;
+}
+
+@media screen and (max-width:767px) {
+    /* Layout */
+    .wrap {
+        width: 100%;
+        padding: 0;
+    }
+    .header {
+        position: relative;
+        margin: 1.5em;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav {
+        width: 5%;
+    }
+    .menu {
+        display: block;
+        max-width: 50%;
+        max-height: 0px;
+        overflow: hidden;
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 2em;
+        background-color: #EAF0ED;
+        transition: 1s;
+    }
+    .menu li {
+        padding: 1em;
+        border-bottom: 1px solid #3F5D45;
+    }
+    #menuControl:checked~.menu {
+        display: block;
+        max-height: 800px;
+    }
+    .header input {
+        display: none;
+    }
+    .header label {
+        display: block;
+        position: absolute;
+    }
+    .logo a {
+        display: block;
+        background-image: url(img/logotype-lg-dark.svg);
+        width: 114px;
+        height: 18px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .footer {
+        width: 100%;
+    }
+    .email {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 186px;
+        padding: 0 30px;
+    }
+    .send {
+        width: 100%;
+    }
+    .good-day {
+        display: none;
+    }
+    .info {
+        padding: 39px 50px 30px 30px;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+    }
+    .line,
+    .fb {
+        padding-top: 3em;
+    }
+    .about {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    /* 商品頁面 Product */
+    .p-content {
+        margin: 0 auto;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .catalog,
+    .p-list,
+    .prod_pic {
+        width: 100%;
+    }
+    .p-item {
+        width: 100%;
+        padding: 5%;
+    }
+    .page ul {
+        padding: 0 6%;
+        width: 100%;
+    }
+    /* 付款成功頁面checkout-success */
+    .CScontent {
+        margin-bottom: 0;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+    }
+    .CScontent a {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    /* 登入頁面log-in CSS*/
+    .socialAccount {
+        display: none;
+    }
+    .LIcontent {
+        margin: 0;
+    }
+    .member {
+        width: 100%;
+    }
+    .member img {
+        width: 90%;
+    }
+    .member ul {
+        display: flex;
+        justify-content: center;
+        background-color: #EAF0ED;
+        width: 100%;
+    }
+    .member li {
+        background-color: #fff;
+        width: 30%;
+        margin: 1.5em 0.3%;
+    }
+    .member a {
+        margin: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* 購物車頁面 shopping cart CSS*/
+    .SCcontent {
+        flex-direction: column;
+        width: 100%;
+    }
+    .shoppingcart,
+    .summary {
+        width: 100%;
+    }
+    .cartItem {
+        padding: 0 2em;
+        flex-wrap: wrap;
+    }
+    .cartItem img {
+        width: 50%;
+    }
+    .cartItem i {
+        display: none;
+    }
+    .cartItemname {
+        flex-direction: column;
+        align-items: start;
+    }
+    .cartItem li {
+        position: relative;
+        border-top: none;
+        border-bottom: 1px solid #EAF0ED;
+    }
+    .cartItem span {
+        position: absolute;
+        bottom: 0;
+        right: .5em;
+    }
+    .summary {
+        background-color: #fff;
+        color: #3F5D45;
+    }
+    .summary h2 {
+        background-color: #EAF0ED;
+        border-bottom: none;
+    }
+    /* 運送頁面 Delivery CSS*/
+    .order {
+        display: none;
+    }
+    .CheckoutInfo {
+        width: 100%;
+    }
+    .CheckoutContent {
+        margin: 0px;
+    }
+    /* Home 首頁 CSS */
+    .homeBanner {
+        height: 457px;
+    }
+    .homeMainbanner {
+        width: 100%;
+        height: 277px;
+    }
+    .homeBanner ul {
+        margin: 0;
+        width: 100%;
+    }
+    .homeBanner li,
+    .greenCover {
+        height: 180px;
+    }
+    .homeBanner h2 {
+        font-size: 20px;
+        letter-spacing: 0rem;
+        line-height: 125px;
+    }
+    .Whychoose,
+    .Whymust {
+        height: 682px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        background-color: #fff;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .WhychooseText {
+        background-image: url(img/sm-橫式-為什麼選擇了做甜點.svg);
+        width: 100%;
+        height: 60px;
+        margin: 30px 0;
+        background-size: contain;
+        order: 3;
+    }
+    .WhychooseBanner,
+    .WhymustBanner {
+        width: 100%;
+        height: 250px;
+        margin: 0;
+        order: 2;
+    }
+    .WhychooseWord,
+    .WhymustWord {
+        width: 84%;
+        height: 252px;
+        padding: 30px;
+        background-color: #EAF0ED;
+        order: 1;
+    }
+    .WhychooseWord,
+    .WhymustWord p {
+        writing-mode: initial;
+    }
+    .WhymustText {
+        background-image: url(img/sm-橫式-為什麼一定要吃甜點.svg);
+        width: 100%;
+        height: 60px;
+        margin: 30px 0;
+        background-size: contain;
+        order: 3;
+    }
+    .NoreasonBanner {
+        background-image: url(img/sm-橫式-想吃甜點是不需要理由的.svg);
+        width: 100%;
+        height: 60px;
+        margin: 30px 0;
+        background-size: contain;
+    }
+    .Home .p-item {
+        width: 100%;
+    }
+    .Home.p-list {
+        margin-bottom: 30px;
+        padding: 0;
+        height: 500px;
+        overflow: hidden;
+    }
+}
