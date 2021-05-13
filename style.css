@@ -1285,6 +1285,9 @@ form {
     .prod_pic {
         width: 100%;
     }
+    .catalog {
+        margin-right: 0;
+    }
     .p-item {
         width: 100%;
         padding: 5%;
